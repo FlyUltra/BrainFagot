@@ -20,7 +20,7 @@ function interpretBF(code) {
       case '-': tape[ptr] = (tape[ptr] - 1) & 255; break;
       case '.': out += String.fromCharCode(tape[ptr]); break;
       case ',': {
-          const input = prompt('Zadej jeden znak pro čtení (nebo nechte prázdné pro NUL):');
+          const input = prompt('Write char:');
           tape[ptr] = input ? input.charCodeAt(0) : 0;
         }
         break;
